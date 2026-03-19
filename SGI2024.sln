@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{3093A374-B5DC-4BD3-B964-211FBFB1980F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogica", "Capalogica\CapaLogica.csproj", "{8742A91E-40DF-459F-99C5-70A3432C270D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaServicios", "CapaServicios\CapaServicios.csproj", "{56ACA97A-BA3F-46BE-8DCD-817373D91E41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VistaSGI", "VistaSGI\VistaSGI.csproj", "{E2242C5A-BDB3-4C45-A2A4-5C6CCA8CC0CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaSesion", "CapaSesion\CapaSesion.csproj", "{8A8F1CB0-FC7A-4D3A-B5C8-D58B03112D1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaSistema", "CapaSistema\CapaSistema.csproj", "{49E631CE-41BA-478A-851E-9E65B67640D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{9F5E6384-8D91-7B30-BF94-463B36B69FC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icon", "Icon", "{142D281E-5B89-5740-5B4C-12022B5D9432}"
+	ProjectSection(SolutionItems) = preProject
+		..\Icon\Alan_Turing.png = ..\Icon\Alan_Turing.png
+		..\Icon\Resources\with_bg\48\alta.png = ..\Icon\Resources\with_bg\48\alta.png
+		..\Icon\Resources\with_bg\48\atencion.png = ..\Icon\Resources\with_bg\48\atencion.png
+		..\Icon\Resources\with_bg\48\audio.png = ..\Icon\Resources\with_bg\48\audio.png
+		..\Icon\Resources\with_bg\48\baja.png = ..\Icon\Resources\with_bg\48\baja.png
+		..\Icon\Resources\with_bg\48\buscar.png = ..\Icon\Resources\with_bg\48\buscar.png
+		..\Icon\Resources\with_bg\48\calendario.png = ..\Icon\Resources\with_bg\48\calendario.png
+		..\Icon\Resources\with_bg\48\carpeta.png = ..\Icon\Resources\with_bg\48\carpeta.png
+		..\Icon\Resources\with_bg\48\chat.png = ..\Icon\Resources\with_bg\48\chat.png
+		..\Icon\Resources\with_bg\48\compartir.png = ..\Icon\Resources\with_bg\48\compartir.png
+		..\Icon\Resources\with_bg\48\configuracion.png = ..\Icon\Resources\with_bg\48\configuracion.png
+		..\Icon\Resources\with_bg\48\confirmacion.png = ..\Icon\Resources\with_bg\48\confirmacion.png
+		..\Icon\cooperadora.png = ..\Icon\cooperadora.png
+		..\Icon\Resources\with_bg\48\crear.png = ..\Icon\Resources\with_bg\48\crear.png
+		..\Icon\Resources\with_bg\48\descargar.png = ..\Icon\Resources\with_bg\48\descargar.png
+		..\Icon\Resources\with_bg\48\eliminar.png = ..\Icon\Resources\with_bg\48\eliminar.png
+		..\Icon\Resources\with_bg\48\en_analisis.png = ..\Icon\Resources\with_bg\48\en_analisis.png
+		..\Icon\Resources\with_bg\48\espera_aprobacion.png = ..\Icon\Resources\with_bg\48\espera_aprobacion.png
+		..\Icon\Resources\with_bg\48\favorito.png = ..\Icon\Resources\with_bg\48\favorito.png
+		..\Icon\Resources\with_bg\48\grupo.png = ..\Icon\Resources\with_bg\48\grupo.png
+		..\Icon\Resources\with_bg\48\guardar.png = ..\Icon\Resources\with_bg\48\guardar.png
+		..\Icon\Resources\with_bg\48\imprimir.png = ..\Icon\Resources\with_bg\48\imprimir.png
+		..\Icon\Resources\with_bg\48\info.png = ..\Icon\Resources\with_bg\48\info.png
+		..\Icon\Resources\with_bg\48\inhabilitar.png = ..\Icon\Resources\with_bg\48\inhabilitar.png
+		..\Icon\isft172_educacion.png = ..\Icon\isft172_educacion.png
+		..\Icon\logo_172.JPG = ..\Icon\logo_172.JPG
+		..\Icon\logo_172.png = ..\Icon\logo_172.png
+		..\Icon\Resources\with_bg\48\modificar.png = ..\Icon\Resources\with_bg\48\modificar.png
+		..\Icon\Resources\with_bg\48\prohibido.png = ..\Icon\Resources\with_bg\48\prohibido.png
+		..\Icon\Resources\with_bg\48\reloj.png = ..\Icon\Resources\with_bg\48\reloj.png
+		..\Icon\Resources\with_bg\48\subir.png = ..\Icon\Resources\with_bg\48\subir.png
+		..\Icon\Resources\with_bg\48\ubicacion.png = ..\Icon\Resources\with_bg\48\ubicacion.png
+		..\Icon\Resources\with_bg\48\usuario.png = ..\Icon\Resources\with_bg\48\usuario.png
+		..\Icon\Resources\with_bg\48\video.png = ..\Icon\Resources\with_bg\48\video.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISFT", "ISFT", "{9D368BFF-070F-D104-DC34-D155C65C2A2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{440EDBF5-70D2-416A-BD27-B43C651ED3A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3093A374-B5DC-4BD3-B964-211FBFB1980F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3093A374-B5DC-4BD3-B964-211FBFB1980F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3093A374-B5DC-4BD3-B964-211FBFB1980F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3093A374-B5DC-4BD3-B964-211FBFB1980F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8742A91E-40DF-459F-99C5-70A3432C270D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8742A91E-40DF-459F-99C5-70A3432C270D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8742A91E-40DF-459F-99C5-70A3432C270D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8742A91E-40DF-459F-99C5-70A3432C270D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56ACA97A-BA3F-46BE-8DCD-817373D91E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56ACA97A-BA3F-46BE-8DCD-817373D91E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56ACA97A-BA3F-46BE-8DCD-817373D91E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56ACA97A-BA3F-46BE-8DCD-817373D91E41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2242C5A-BDB3-4C45-A2A4-5C6CCA8CC0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2242C5A-BDB3-4C45-A2A4-5C6CCA8CC0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2242C5A-BDB3-4C45-A2A4-5C6CCA8CC0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2242C5A-BDB3-4C45-A2A4-5C6CCA8CC0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8F1CB0-FC7A-4D3A-B5C8-D58B03112D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8F1CB0-FC7A-4D3A-B5C8-D58B03112D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8F1CB0-FC7A-4D3A-B5C8-D58B03112D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8F1CB0-FC7A-4D3A-B5C8-D58B03112D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E631CE-41BA-478A-851E-9E65B67640D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E631CE-41BA-478A-851E-9E65B67640D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E631CE-41BA-478A-851E-9E65B67640D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E631CE-41BA-478A-851E-9E65B67640D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D368BFF-070F-D104-DC34-D155C65C2A2B} = {9F5E6384-8D91-7B30-BF94-463B36B69FC3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C101B8B9-1744-47D7-9B62-0ABDD25B4CAE}
+	EndGlobalSection
+EndGlobal

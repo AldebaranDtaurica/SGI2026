@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8742A91E-40DF-459F-99C5-70A3432C270D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Capalogica</RootNamespace>
+    <AssemblyName>Capalogica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Usuario\CL_AbmPerfiles.cs" />
+    <Compile Include="Alumnos\CL_AlmunoPreInscripcion.cs" />
+    <Compile Include="Cargas\CL_CargaBox.cs" />
+    <Compile Include="CL_ConfigInstitucional.cs" />
+    <Compile Include="Usuario\CL_IngresoDatos.cs" />
+    <Compile Include="Usuario\CL_Login.cs" />
+    <Compile Include="CL_Model\Est\CL_EstudCursada.cs" />
+    <Compile Include="CL_Model\Est\CL_EstudFinal.cs" />
+    <Compile Include="CL_Model\Inst\CL_InstCarreras.cs" />
+    <Compile Include="CL_Model\Inst\CL_InstCarrerasDivision.cs" />
+    <Compile Include="CL_Model\Inst\CL_InstCorrelativMateria.cs" />
+    <Compile Include="CL_Model\Inst\CL_Institucion.cs" />
+    <Compile Include="CL_Model\Inst\CL_InstMateria.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstActividades.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstCategoriasAdj.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstEstCivil.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstGenero.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstIdioma.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstInstitucional.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstLocalidad.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstNacionalidades.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstObrasSociales.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstPartido.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstPersGrupo.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstProvincia.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstSinDniArg.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstTelefonosUtiles.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstTipoContacto.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstTipoDoc.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstTitulo.cs" />
+    <Compile Include="CL_Model\Mst\CL_MstTituloGrado.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersAdjuntos.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersContacto.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersDomicilio.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersEstudios.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersIngresoTitulo.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersLaborales.cs" />
+    <Compile Include="CL_Model\Pers\CL_Persona.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersOtrosDatos.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersOtrosTransporte.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersReferente.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersSaludAlergias.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersSaludDiscap.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersSaludEjercicio.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersSaludInternaciones.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersSaludMedicacion.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersSaludObSocial.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersSaludOperaciones.cs" />
+    <Compile Include="CL_Model\Pers\CL_PersSaludSituacion.cs" />
+    <Compile Include="Alumnos\CL_Preinscripciones.cs" />
+    <Compile Include="CL_Reportes.cs" />
+    <Compile Include="Usuario\CL_Roles.cs" />
+    <Compile Include="Usuario\CL_Usuario.cs" />
+    <Compile Include="Usuario\CL_UsuarioFamilia.cs" />
+    <Compile Include="Usuario\CL_UsuarioPermiso.cs" />
+    <Compile Include="Alumnos\CL_ValidacionPreinscripciones.cs" />
+    <Compile Include="Politicas\CL_ValidaPoliticasPass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{3093a374-b5dc-4bd3-b964-211fbfb1980f}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaServicios\CapaServicios.csproj">
+      <Project>{56aca97a-ba3f-46be-8dcd-817373d91e41}</Project>
+      <Name>CapaServicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaSesion\CapaSesion.csproj">
+      <Project>{8a8f1cb0-fc7a-4d3a-b5c8-d58b03112d1a}</Project>
+      <Name>CapaSesion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaSistema\CapaSistema.csproj">
+      <Project>{49e631ce-41ba-478a-851e-9e65b67640d8}</Project>
+      <Name>CapaSistema</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

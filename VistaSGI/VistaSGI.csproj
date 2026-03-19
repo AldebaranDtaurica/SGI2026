@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2242C5A-BDB3-4C45-A2A4-5C6CCA8CC0CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VistaSGI</RootNamespace>
+    <AssemblyName>VistaSGI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>VistaSGI.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CV_Model.cs" />
+    <Compile Include="FrmAccionInicial\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccionInicial\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguracion\FrmMantenimientoBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguracion\FrmMantenimientoBD.Designer.cs">
+      <DependentUpon>FrmMantenimientoBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosPersonales\FrmAlumnado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosPersonales\FrmAlumnado.Designer.cs">
+      <DependentUpon>FrmAlumnado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmActividades.Designer.cs">
+      <DependentUpon>FrmAbmActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmCateogoriaAdj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmCateogoriaAdj.Designer.cs">
+      <DependentUpon>FrmAbmCateogoriaAdj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmEstCivil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmEstCivil.Designer.cs">
+      <DependentUpon>FrmAbmEstCivil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmGenero.Designer.cs">
+      <DependentUpon>FrmAbmGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmInstitucional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmInstitucional.Designer.cs">
+      <DependentUpon>FrmAbmInstitucional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmLocalidad.Designer.cs">
+      <DependentUpon>FrmAbmLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmNacionalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmNacionalidades.Designer.cs">
+      <DependentUpon>FrmAbmNacionalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmObrasSociales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmObrasSociales.Designer.cs">
+      <DependentUpon>FrmAbmObrasSociales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\frmAbmPartido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\frmAbmPartido.Designer.cs">
+      <DependentUpon>frmAbmPartido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTelefonosUtiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTelefonosUtiles.Designer.cs">
+      <DependentUpon>FrmAbmTelefonosUtiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTipoContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTipoContacto.Designer.cs">
+      <DependentUpon>FrmAbmTipoContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTipoDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTipoDoc.Designer.cs">
+      <DependentUpon>FrmAbmTipoDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTitulo.Designer.cs">
+      <DependentUpon>FrmAbmTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTituloGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosMestros\FrmAbmTituloGrado.Designer.cs">
+      <DependentUpon>FrmAbmTituloGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccionInicial\FrmInicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccionInicial\FrmInicioSesion.Designer.cs">
+      <DependentUpon>FrmInicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccionInicial\FrmMenuDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccionInicial\FrmMenuDatos.Designer.cs">
+      <DependentUpon>FrmMenuDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins\FrmAsignaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins\FrmAsignaciones.Designer.cs">
+      <DependentUpon>FrmAsignaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalud\FrmActFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalud\FrmActFisica.Designer.cs">
+      <DependentUpon>FrmActFisica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdjuntos\FrmAdjuntosEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdjuntos\FrmAdjuntosEstudiantes.Designer.cs">
+      <DependentUpon>FrmAdjuntosEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalud\FrmAlergias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalud\FrmAlergias.Designer.cs">
+      <DependentUpon>FrmAlergias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmAlumnosPreInscripcionA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmAlumnosPreInscripcionA.Designer.cs">
+      <DependentUpon>FrmAlumnosPreInscripcionA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalud\FrmCondicionSalud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalud\FrmCondicionSalud.Designer.cs">
+      <DependentUpon>FrmCondicionSalud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguracion\FrmConfigInstitucional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguracion\FrmConfigInstitucional.Designer.cs">
+      <DependentUpon>FrmConfigInstitucional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContact\FrmContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContact\FrmContacto.Designer.cs">
+      <DependentUpon>FrmContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOtrosDatos\FrmDatosAdicionales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOtrosDatos\FrmDatosAdicionales.Designer.cs">
+      <DependentUpon>FrmDatosAdicionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalud\FrmDiscapacidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalud\FrmDiscapacidad.Designer.cs">
+      <DependentUpon>FrmDiscapacidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosPersonales\FrmDomicilio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosPersonales\FrmDomicilio.Designer.cs">
+      <DependentUpon>FrmDomicilio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmInscripcionCursada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmInscripcionCursada.Designer.cs">
+      <DependentUpon>FrmInscripcionCursada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmInscripcionFinales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmInscripcionFinales.Designer.cs">
+      <DependentUpon>FrmInscripcionFinales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalud\FrmInternaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalud\FrmInternaciones.Designer.cs">
+      <DependentUpon>FrmInternaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins\FrmLoginActualizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins\FrmLoginActualizacion.Designer.cs">
+      <DependentUpon>FrmLoginActualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins\FrmLoginPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins\FrmLoginPreguntas.Designer.cs">
+      <DependentUpon>FrmLoginPreguntas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalud\FrmMedicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalud\FrmMedicacion.Designer.cs">
+      <DependentUpon>FrmMedicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccionInicial\FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccionInicial\FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosPersonales\FrmObraSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosPersonales\FrmObraSocial.Designer.cs">
+      <DependentUpon>FrmObraSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalud\FrmOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalud\FrmOperaciones.Designer.cs">
+      <DependentUpon>FrmOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguracion\FrmPoliticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguracion\FrmPoliticas.Designer.cs">
+      <DependentUpon>FrmPoliticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmPreinscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmPreinscripciones.Designer.cs">
+      <DependentUpon>FrmPreinscripciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosPersonales\FrmReferente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosPersonales\FrmReferente.Designer.cs">
+      <DependentUpon>FrmReferente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins\FrmRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins\FrmRoles.Designer.cs">
+      <DependentUpon>FrmRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguracion\FrmTablasMaestras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguracion\FrmTablasMaestras.Designer.cs">
+      <DependentUpon>FrmTablasMaestras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOtrosDatos\FrmTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOtrosDatos\FrmTransporte.Designer.cs">
+      <DependentUpon>FrmTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins\FrmUsuarioAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins\FrmUsuarioAlta.Designer.cs">
+      <DependentUpon>FrmUsuarioAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogins\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogins\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmValidaPreinscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInscripciones\FrmValidaPreinscripcion.Designer.cs">
+      <DependentUpon>FrmValidaPreinscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lenguaje\CV_Lenguaje.cs" />
+    <Compile Include="Lenguaje\LenguajeEn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LenguajeEn.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Lenguaje\LenguajeEs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LenguajeEs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="FrmAccionInicial\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguracion\FrmConfigInstitucional.resx">
+      <DependentUpon>FrmConfigInstitucional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguracion\FrmMantenimientoBD.resx">
+      <DependentUpon>FrmMantenimientoBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosPersonales\FrmAlumnado.resx">
+      <DependentUpon>FrmAlumnado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmActividades.resx">
+      <DependentUpon>FrmAbmActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmCateogoriaAdj.resx">
+      <DependentUpon>FrmAbmCateogoriaAdj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmEstCivil.resx">
+      <DependentUpon>FrmAbmEstCivil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmGenero.resx">
+      <DependentUpon>FrmAbmGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmInstitucional.resx">
+      <DependentUpon>FrmAbmInstitucional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmLocalidad.resx">
+      <DependentUpon>FrmAbmLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmNacionalidades.resx">
+      <DependentUpon>FrmAbmNacionalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmObrasSociales.resx">
+      <DependentUpon>FrmAbmObrasSociales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\frmAbmPartido.resx">
+      <DependentUpon>frmAbmPartido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmTelefonosUtiles.resx">
+      <DependentUpon>FrmAbmTelefonosUtiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmTipoContacto.resx">
+      <DependentUpon>FrmAbmTipoContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmTipoDoc.resx">
+      <DependentUpon>FrmAbmTipoDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmTitulo.resx">
+      <DependentUpon>FrmAbmTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosMestros\FrmAbmTituloGrado.resx">
+      <DependentUpon>FrmAbmTituloGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccionInicial\FrmInicioSesion.resx">
+      <DependentUpon>FrmInicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins\FrmAsignaciones.resx">
+      <DependentUpon>FrmAsignaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins\FrmUsuarios.aa.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccionInicial\FrmMenuDatos.resx">
+      <DependentUpon>FrmMenuDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalud\FrmActFisica.resx">
+      <DependentUpon>FrmActFisica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdjuntos\FrmAdjuntosEstudiantes.resx">
+      <DependentUpon>FrmAdjuntosEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalud\FrmAlergias.resx">
+      <DependentUpon>FrmAlergias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInscripciones\FrmAlumnosPreInscripcionA.resx">
+      <DependentUpon>FrmAlumnosPreInscripcionA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalud\FrmCondicionSalud.resx">
+      <DependentUpon>FrmCondicionSalud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContact\FrmContacto.resx">
+      <DependentUpon>FrmContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOtrosDatos\FrmDatosAdicionales.resx">
+      <DependentUpon>FrmDatosAdicionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalud\FrmDiscapacidad.resx">
+      <DependentUpon>FrmDiscapacidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosPersonales\FrmDomicilio.resx">
+      <DependentUpon>FrmDomicilio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInscripciones\FrmInscripcionCursada.resx">
+      <DependentUpon>FrmInscripcionCursada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInscripciones\FrmInscripcionFinales.resx">
+      <DependentUpon>FrmInscripcionFinales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalud\FrmInternaciones.resx">
+      <DependentUpon>FrmInternaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins\FrmLoginActualizacion.resx">
+      <DependentUpon>FrmLoginActualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins\FrmLoginPreguntas.resx">
+      <DependentUpon>FrmLoginPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalud\FrmMedicacion.resx">
+      <DependentUpon>FrmMedicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAccionInicial\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosPersonales\FrmObraSocial.resx">
+      <DependentUpon>FrmObraSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalud\FrmOperaciones.resx">
+      <DependentUpon>FrmOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguracion\FrmPoliticas.resx">
+      <DependentUpon>FrmPoliticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInscripciones\FrmPreinscripciones.resx">
+      <DependentUpon>FrmPreinscripciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosPersonales\FrmReferente.resx">
+      <DependentUpon>FrmReferente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins\FrmRoles.resx">
+      <DependentUpon>FrmRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguracion\FrmTablasMaestras.resx">
+      <DependentUpon>FrmTablasMaestras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOtrosDatos\FrmTransporte.resx">
+      <DependentUpon>FrmTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins\FrmUsuarioAlta.resx">
+      <DependentUpon>FrmUsuarioAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogins\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInscripciones\FrmValidaPreinscripcion.resx">
+      <DependentUpon>FrmValidaPreinscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenguaje\LenguajeEn.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LenguajeEn.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lenguaje\LenguajeEs.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LenguajeEs.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capalogica\CapaLogica.csproj">
+      <Project>{8742a91e-40df-459f-99c5-70a3432c270d}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaServicios\CapaServicios.csproj">
+      <Project>{56aca97a-ba3f-46be-8dcd-817373d91e41}</Project>
+      <Name>CapaServicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaSesion\CapaSesion.csproj">
+      <Project>{8a8f1cb0-fc7a-4d3a-b5c8-d58b03112d1a}</Project>
+      <Name>CapaSesion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaSistema\CapaSistema.csproj">
+      <Project>{49e631ce-41ba-478a-851e-9e65b67640d8}</Project>
+      <Name>CapaSistema</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

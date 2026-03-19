@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56ACA97A-BA3F-46BE-8DCD-817373D91E41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaServicios</RootNamespace>
+    <AssemblyName>CapaServicios</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Seguridad\CSR_Aleatorios.cs" />
+    <Compile Include="Mail\CSR_ArmarMail.cs" />
+    <Compile Include="CSR_Class.cs" />
+    <Compile Include="Mail\CSR_EnviarMail.cs" />
+    <Compile Include="CSR_Formularios.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstActividades.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstCategoriasAdj.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstEstCivil.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstGenero.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstIdioma.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstInstitucional.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstLocalidad.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstNacionalidades.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstObrasSociales.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstPartido.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstPersGrupo.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstProvincia.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstSinDniArg.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstTelefonosUtiles.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstTipoContacto.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstTipoDoc.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstTitulo.cs" />
+    <Compile Include="CSR_Model\Mst\CSR_MstTituloGrado.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\CSR_Seguridad.cs" />
+    <Compile Include="Mail\CSR_ValidaMail.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
