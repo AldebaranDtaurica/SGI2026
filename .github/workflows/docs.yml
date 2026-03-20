@@ -2,7 +2,7 @@ name: Generar Diagramas y Docs
 
 on:
   push:
-    branches: [ main ] # Cambia a 'master' si es tu rama principal
+    branches: [ master ] # Cambia a 'master' si es tu rama principal
 
 jobs:
   build:
