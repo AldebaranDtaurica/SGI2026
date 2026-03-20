@@ -1,0 +1,33 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classCapaDatos_1_1CD__Conexion.html" title=" " alt="" coords="5,277,189,303"/>
+<area shape="rect" id="Node000001" href="$classCapaDatos_1_1CD__AlmunoPreInscripcion.html" title=" " alt="" coords="237,252,501,277"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="203,278,237,274,237,280,203,283"/>
+<area shape="rect" id="Node000002" href="$classCapaDatos_1_1CD__EjecutarSP.html" title=" " alt="" coords="273,301,465,327"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="203,297,273,303,273,308,203,302"/>
+<area shape="rect" id="Node000003" href="$classCapaDatos_1_1CD__AbmPerfiles.html" title=" " alt="" coords="597,5,798,31"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="477,302,499,287,520,257,528,227,527,197,522,165,517,134,516,102,525,71,547,40,570,24,595,15,597,20,572,29,551,44,530,73,522,103,522,133,528,164,533,196,534,228,525,260,503,291,480,307"/>
+<area shape="rect" id="Node000004" href="$classCapaDatos_1_1CD__AccesoBD.html" title=" " alt="" coords="603,55,791,80"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="477,302,500,287,517,264,524,240,525,215,522,190,520,164,520,139,529,114,548,89,573,73,603,64,604,69,576,78,551,93,533,116,526,140,525,164,528,189,530,215,530,241,522,266,503,291,480,306"/>
+<area shape="rect" id="Node000005" href="$classCapaDatos_1_1CD__CargaBox.html" title=" " alt="" coords="604,104,791,129"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="477,301,500,287,514,270,521,252,522,214,524,176,532,157,548,139,574,123,603,114,604,119,576,128,551,143,537,159,530,177,528,215,526,253,518,272,503,291,480,306"/>
+<area shape="rect" id="Node000006" href="$classCapaDatos_1_1CD__Login.html" title=" " alt="" coords="618,153,777,179"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="477,299,500,287,511,275,517,264,523,239,528,213,536,200,548,188,581,171,617,163,618,168,583,176,551,192,540,203,533,214,528,240,522,266,515,279,503,291,480,304"/>
+<area shape="rect" id="Node000007" href="$classCapaDatos_1_1CD__MantenimientoBD.html" title=" " alt="" coords="577,203,818,228"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="477,296,500,286,514,275,523,262,532,249,548,237,576,226,578,231,551,242,536,253,527,265,518,279,503,291,479,301"/>
+<area shape="rect" id="Node000008" href="$classCapaDatos_1_1CD__PoliticasPass.html" title=" " alt="" coords="594,252,801,277"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="467,297,612,275,612,280,468,302"/>
+<area shape="rect" id="Node000009" href="$classCapaDatos_1_1CD__Preinscripciones.html" title=" " alt="" coords="583,301,812,327"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="479,311,582,311,582,317,479,317"/>
+<area shape="rect" id="Node000010" href="$classCapaDatos_1_1CD__Usuario.html" title=" " alt="" coords="611,351,784,376"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="468,326,612,348,612,353,467,331"/>
+<area shape="rect" id="Node000011" href="$classCapaDatos_1_1CD__UsuarioFamilia.html" title=" " alt="" coords="587,400,807,425"/>
+<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="410,330,475,358,550,385,605,397,604,403,549,390,473,363,408,335"/>
+<area shape="rect" id="Node000012" href="$classCapaDatos_1_1CD__UsuarioPermiso.html" title=" " alt="" coords="584,449,811,475"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="397,334,463,385,505,412,550,434,591,447,589,452,548,439,503,417,460,390,393,338"/>
+<area shape="rect" id="Node000013" href="$classCapaDatos_1_1CD__UsuarioRespuesta.html" title=" " alt="" coords="577,499,818,524"/>
+<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="390,336,417,370,455,411,500,451,551,484,583,496,581,501,548,488,497,455,451,415,413,374,386,340"/>
+<area shape="rect" id="Node000014" href="$classCapaDatos_1_1CD__ValidacionPreinscripciones.html" title=" " alt="" coords="549,548,845,573"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="386,338,410,382,447,435,494,489,521,513,551,533,578,545,576,550,548,538,518,517,490,493,443,439,406,385,381,341"/>
+<area shape="rect" id="Node000015" href="$classCapaDatos_1_1Usuario_1_1CD__Roles.html" title=" " alt="" coords="612,598,783,638"/>
+<area shape="poly" id="edge15_Node000002_Node000015" title=" " alt="" coords="382,338,405,391,440,457,489,525,518,556,551,582,580,598,613,608,611,613,578,603,548,587,515,560,485,529,436,460,400,393,377,340"/>
+</map>

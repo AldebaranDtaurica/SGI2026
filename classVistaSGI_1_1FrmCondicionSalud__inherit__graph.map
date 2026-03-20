@@ -1,0 +1,7 @@
+<map id="VistaSGI.FrmCondicionSalud" name="VistaSGI.FrmCondicionSalud">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,272,204,357"/>
+<area shape="rect" id="Node000002" href="$classVistaSGI_1_1FrmBase.html" title=" " alt="" coords="7,119,203,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,238,107,272,102,272,102,238"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="81,5,128,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,85,107,118,102,118,102,85"/>
+</map>
