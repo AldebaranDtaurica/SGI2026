@@ -4,6 +4,8 @@ on:
   push:
     branches: [ master ] # Cambia a 'master' si es tu rama principal
 
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
