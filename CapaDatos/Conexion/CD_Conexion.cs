@@ -9,11 +9,12 @@ namespace CapaDatos
 
         public CD_Conexion()
         {
-            // Conexión a la base de datos SGInst
-            connectionstring = "Server=localhost\\SQLEXPRESS01;Database=SGInst_172;Integrated Security=True";
-
-            // Conexión a la base de datos master
-            connectionStringMas = "Server=localhost\\SQLEXPRESS;Database=master;Integrated Security=True";
+            
+		// Usamos el nombre del servidor GANDALF\SQLEXPRESS
+                connectionstring = "Server=GANDALF\\SQLEXPRESS;Database=SGInst_172;Integrated Security=True;TrustServerCertificate=True";
+            
+		// conexión a master con el servidor correcto
+          	 connectionStringMas = "Server=GANDALF\\SQLEXPRESS;Database=master;Integrated Security=True";
         }
 
         protected SqlConnection GetConnection()
