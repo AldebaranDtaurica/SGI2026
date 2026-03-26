@@ -1,5 +1,5 @@
 <map id="CapaDatos.CD_AlmunoPreInscripcion" name="CapaDatos.CD_AlmunoPreInscripcion">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,219,261,284"/>
-<area shape="rect" id="Node000002" href="$classCapaDatos_1_1CD__Conexion.html" title=" " alt="" coords="53,5,214,171"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,184,136,219,131,219,131,184"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,159,261,224"/>
+<area shape="rect" id="Node000002" href="$classCapaDatos_1_1CD__Conexion.html" title=" " alt="" coords="53,5,214,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,124,136,159,131,159,131,124"/>
 </map>
