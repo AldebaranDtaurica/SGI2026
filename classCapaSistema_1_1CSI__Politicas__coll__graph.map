@@ -1,9 +1,9 @@
 <map id="CapaSistema.CSI_Politicas" name="CapaSistema.CSI_Politicas">
-<area shape="rect" id="Node000001" title=" " alt="" coords="17,477,211,603"/>
-<area shape="rect" id="Node000002" href="$classCapaDatos_1_1CD__PoliticasPass.html" title=" " alt="" coords="10,329,218,415"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,415,117,461,111,461,111,415"/>
-<area shape="rect" id="Node000003" href="$classCapaDatos_1_1CD__EjecutarSP.html" title=" " alt="" coords="5,160,223,280"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,294,117,329,111,329,111,294"/>
-<area shape="rect" id="Node000004" href="$classCapaDatos_1_1CD__Conexion.html" title=" " alt="" coords="33,5,195,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="117,124,117,159,111,159,111,124"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,537,211,663"/>
+<area shape="rect" id="Node000002" href="$classCapaDatos_1_1CD__PoliticasPass.html" title=" " alt="" coords="10,389,218,475"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,475,117,521,111,521,111,475"/>
+<area shape="rect" id="Node000003" href="$classCapaDatos_1_1CD__EjecutarSP.html" title=" " alt="" coords="5,220,223,340"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,354,117,389,111,389,111,354"/>
+<area shape="rect" id="Node000004" href="$classCapaDatos_1_1CD__Conexion.html" title=" " alt="" coords="33,5,195,171"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="117,184,117,220,111,220,111,184"/>
 </map>
